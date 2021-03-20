@@ -12,7 +12,7 @@
 			
 			if (x == 1) {
 				 
-				text = `<p> Esta clase le enseña a los estudiantes los fundamentos de la programación de computadoras usando lenguajes de  web, como HTML, CSS y JS. Los estudiantes aprenden a implementar y profundizar sus conocimientos matemáticos a través de técnicas de programación y proyectos web prácticos.</p>
+				text = `<p> &aacute Esta clase le enseña a los estudiantes los fundamentos de la programación de computadoras usando lenguajes de  web, como HTML, CSS y JS. Los estudiantes aprenden a implementar y profundizar sus conocimientos matemáticos a través de técnicas de programación y proyectos web prácticos.</p>
 						<p> La programación es ya parte esencial del porvenir y por ende un habilidad que a todo estudiante le beneficia dominar en esta era digital. Esta clase es uno de los programas que ofrece EMH Charter para ayudar a los estudiantes a poner en práctica sus conocimientos matemáticos y prepararlos para el mercado laboral tan influenciado por la tecnología. </p>
 						`;
 
