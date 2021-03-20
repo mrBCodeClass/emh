@@ -13,8 +13,16 @@ select {
   font: 1em Courier;
 }
 
-img {height: auto; max-width: 20%; border: .2em solid black;}
-a {color: white;}
-a:hover {color: yellow;}
+ img {height: auto; max-width: 20%; border: .2em solid black;}
+ a {color: white;}
+ a:hover {color: yellow;}
 
-#wrapper {margin: 0 auto;}
+
+
+	@media screen and (max-width: 700px) {
+
+
+	img {height: auto; max-width: 80%;}
+
+	}
+	
