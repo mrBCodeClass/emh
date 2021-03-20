@@ -1,0 +1,20 @@
+body {
+  background-color: #050a3d;
+  color: white;
+  font: 1em Courier New;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+select {
+  background-color: #050a3d;
+  color: white;
+  font: 1em Courier;
+}
+
+img {height: auto; max-width: 20%; border: .2em solid black;}
+a {color: white;}
+a:hover {color: yellow;}
+
+#wrapper {margin: 0 auto;}
