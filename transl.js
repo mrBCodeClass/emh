@@ -12,18 +12,18 @@
 			
 			if (x == 1) {
 				 
-				text = `<p> &aacute Esta clase le enseña a los estudiantes los fundamentos de la programación de computadoras usando lenguajes de  web, como HTML, CSS y JS. Los estudiantes aprenden a implementar y profundizar sus conocimientos matemáticos a través de técnicas de programación y proyectos web prácticos.</p>
-						<p> La programación es ya parte esencial del porvenir y por ende un habilidad que a todo estudiante le beneficia dominar en esta era digital. Esta clase es uno de los programas que ofrece EMH Charter para ayudar a los estudiantes a poner en práctica sus conocimientos matemáticos y prepararlos para el mercado laboral tan influenciado por la tecnología. </p>
+				text = `<p> Esta clase le ense&ntilde;a a los estudiantes los fundamentos de la programaci&oacute;n de computadoras usando lenguajes de  web, como HTML, CSS y JS. Los estudiantes aprenden a implementar y profundizar sus conocimientos matem&aacute;ticos a trav&eacute;s de t&eacute;cnicas de programaci&oacute;n y proyectos web prácticos.</p>
+						<p> La programaci&oacute;n es ya parte esencial del porvenir y por ende un habilidad que a todo estudiante le beneficia dominar en esta era digital. Esta clase es uno de los programas que ofrece EMH Charter para ayudar a los estudiantes a poner en pr&aacute;ctica sus conocimientos matem&aacute;ticos y prepararlos para el mercado laboral tan influenciado por la tecnología. </p>
 						`;
 
 			} else if (x == 2) {
 
 				text = `<p> Saludos, </p>
-						<p> Soy el Sr. Barinas, también conocido como Mr. B, y me considero un profesor de STEM que disfruta enseñanar una amplia gama de materias, desde álgebra hasta biología, la informática y mucho más. Y como pueden ver tengo un gran interés en enseñar a los estudiantes a programar. </p>
-						<p> Escribí este sitio con JS "vainilla", es decir, desde cero. Sin software de apoyo o atajos.  Todo a través de trabajo duro, que es lo que busco inculcar en mis estudiantes.</p>
-						<p> Quiero que mis alumnos obtengan una comprensión profunda e intuitiva de los principios de informática. Los estudiantes deben aprenden sin trucos o programas auxiliares que a menudo terminan como "muletas", dificultando su comprensión completa de los lenguajes de programación. </p>
-						<p> Mi filosofía es que los estudiantes deben escribir un código limpio y altamente legible que proporcione una plataforma de usuario dinámica e intuitiva. </p>
-						<p> En resumen, mi objetivo es introducir a mis estudiantes a la programación y capacitarlos para que exploren toda una amplia vertiente de idiomas de programación que puedan abrirles a oportunidades profesionales en el futuro.  </p>
+						<p> Soy el Sr. Barinas, tambi&eacute;n conocido como Mr. B, y me considero un profesor de STEM que disfruta ense&ntilde;anar una amplia gama de materias, desde &aacute;gebra hasta biolog&iacute;a, la inform&aacute;tica y mucho m&aacute;s. Y como pueden ver tengo un gran inter&eacute;s en ense&ntilde;ar a los estudiantes a programar. </p>
+						<p> Escrib&iacute; este sitio con JS "vainilla", es decir, desde cero. Sin software de apoyo o atajos.  Todo a trav&eacute;s de trabajo duro, que es lo que busco inculcar en mis estudiantes.</p>
+						<p> Quiero que mis alumnos obtengan una comprensi&oacute;n profunda e intuitiva de los principios de inform&aacute;tica. Los estudiantes deben aprenden sin trucos o programas auxiliares que a menudo terminan como "muletas", dificultando su comprensi&oacute;n completa de los lenguajes de programaci&oacute;n. </p>
+						<p> Mi filosof&iacute;a es que los estudiantes deben escribir un c&oacute;digo limpio y altamente legible que proporcione una plataforma de usuario din&aacute;mica e intuitiva. </p>
+						<p> En resumen, mi objetivo es introducir a mis estudiantes a la programaci&oacute;n y capacitarlos para que exploren toda una amplia vertiente de idiomas de programaci&oacute;n que puedan abrirles a oportunidades profesionales en el futuro.  </p>
 						`;
 				
 				 
