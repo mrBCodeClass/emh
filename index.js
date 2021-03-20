@@ -6,8 +6,8 @@ function dropdownRedirect(url) {
 let emhLogo = 'https://static.wixstatic.com/media/23ea77_d826538b69a84e61b9d002506df335d8~mv2.jpg/v1/fill/w_540,h_410,al_c,lg_1,q_80/hornet-logo-blue-500px.webp';
 
 // contentArea data "the meat and potatoes"
-function mainPage () {
-  
+function mainPage (x) {
+    
 	let emhProj = ['Freitty G', 'Jesus V', 'Jocelyn S', 'Chenay C'];
 	let siteName = ['freitty', 'jesus', 'jocelyn', 'chenay'];
 
@@ -15,9 +15,9 @@ function mainPage () {
 
 	let text = "<h3> Mr. B's Coding Class Projects </h3>";	
 	text += '<p><img src="' + emhLogo + '"/></p>';
-	text += `<p><span class="headerLink"><a href="https://www.emhcharter.org/"> EMH Charter </a></span>
-			    <span class="headerLink"><a href="class.html"> Class </a></span> 
-			    <span class="headerLink"><a href="mrb.html"> Mr. B </a></span> 		
+	text += `<p><span><a class="headerLink" href="https://www.emhcharter.org/"> EMH Charter </a></span>
+			    <span><a class="headerLink" href="class.html"> Class </a></span> 
+			    <span><a class="headerLink" href="mrb.html"> Mr. B </a></span> 		
 			 </p>
 			`;
 
@@ -45,7 +45,8 @@ function mainPage () {
 	document.getElementById('contentArea').innerHTML = text;
 	 
 	  
-	}
+}
+
+	
 
 mainPage();
-

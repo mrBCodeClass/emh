@@ -7,10 +7,16 @@ body {
   text-align: center; 
 }
 
-select {
+button, select {
   background-color: #050a3d;
   color: white;
   font: 1em Courier;
+}
+
+button {
+	
+	font-weight: bold; margin: 1em; background-color: #5993f0;
+	
 }
 
 img {
@@ -19,21 +25,37 @@ img {
 	 border: .2em solid black;
 }
 
-a {color: white; text-decoration: none;}
-a:hover {color: #050a3d; font-weight: bold;}
-span:hover {background-color: white; color: #050a3d; }
+a {color: white; border: .2em solid white; text-decoration: none;}
+a:hover {background-color: white; color: #050a3d; font-weight: bold;}
+
+
 
 .headerLink {padding: .5em; margin: .5em; border: .1em solid white;}
 
 	@media screen and (max-width: 700px) {
-	img {height: auto; max-width: 80%;}
-	/* body {background-color: red;} */
-	p span {display: block;}
-	}
+		img {height: auto; max-width: 80%;}
+		
+		.stdPage {
+				/* cannot get width to work here for some reason */ 
+				max-width: 90%; /* width: 100%; */
+			
+			/* 
+				the width only applies for some strange reason only works with background color, 
+				so I made the background color command match the body background to avoid interference
+			*/	
+			background-color: #050a3d;
+			font-size: .8em;
 
-.stdPage {max-widthx: 70%;}	
+		}		
+	
+		/* body {background-color: red;} */
+		a {display: block;}
+		
+		}
+
+.stdPage {max-width: 80%;}	
 .stdPage p {text-align: left;}
-.stdPage .box2 {
+.stdPage #box2 {
 	border: .1em solid white; 
 	border-radius: 12px; 
 	padding: 1em; 
