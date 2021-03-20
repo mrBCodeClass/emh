@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+
+.main{ background-color:#b8bec2;border-style:solid;padding:1em;margin;:1em;
+text-align:center;height:14em;font-family:Arial;font-weight:bold;border-color:grey;border-radius:12px}
+
+img {
+height: 13em;
+max-width: %;
+border: solid black;float:left;
+}
+
+#result {color:red;font:2em Impact;background-color:#dedede;padding:1em;border-style:solid;border-color:grey;width:
+
+
+</style>
+
+</head>
+<body>
+
+
+
+<div class="main">Enter Bill
+<input type="numbers" id="entry"/>
+  <button onclick="tipCalc()">Go </button>
+  
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSklW4LMJN0wq9Gg9cZDF0XWWeQYoa4m5RpeA&usqp=CAU">
+  
+<p> The value of your tip is  </p> 
+<p id='result'></p>
+
+
+
+</body>
+
+<script>
+
+function tipCalc() {
+
+let b = document.getElementById('entry').value
+
+let t = Math.round((b*.15));
+
+document.getElementById('result').innerHTML= 'Your tip is $'+ t;
+
+}
+
+ 
+</script>
+
+</html>
