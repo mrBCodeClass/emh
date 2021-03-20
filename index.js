@@ -2,25 +2,50 @@ function dropdownRedirect(url) {
 	window.open(url, '_blank');					
 }
 
+// logo url shorthand
 let emhLogo = 'https://static.wixstatic.com/media/23ea77_d826538b69a84e61b9d002506df335d8~mv2.jpg/v1/fill/w_540,h_410,al_c,lg_1,q_80/hornet-logo-blue-500px.webp';
 
+// contentArea data "the meat and potatoes"
 function mainPage () {
   
-let emhProj = ['Jesus V', 'Freitty G', 'Jocelyn', 'Chenay'];
-let siteName = ['freitty', 'jesus', 'jocelyn', 'chenay'];
-let text = "<h3> Mr. B's Coding Class Projects </h3>";
-  text += '<p><img src="' + emhLogo + '"/></p>';
-text += '<h5> Hostos Bio Page </h5><select onChange="dropdownRedirect(this.value)"><option>Choose below</option>';
+	let emhProj = ['Freitty G', 'Jesus V', 'Jocelyn S', 'Chenay C'];
+	let siteName = ['freitty', 'jesus', 'jocelyn', 'chenay'];
 
-  for (i = 0; i < siteName.length; i++) {
-  text += "<option>" + siteName[i] + ".html</option>";
-}
-text += '</select>';  
-  
-    document.getElementById('contentArea').innerHTML = text;
- 
-  
-}
+	// HEADER AREA
+
+	let text = "<h3> Mr. B's Coding Class Projects </h3>";	
+	text += '<p><img src="' + emhLogo + '"/></p>';
+	text += `<p><span class="headerLink"><a href="https://www.emhcharter.org/"> EMH Charter </a></span>
+			    <span class="headerLink"><a href="class.html"> Class </a></span> 
+			    <span class="headerLink"><a href="mrb.html"> Mr. B </a></span> 		
+			 </p>
+			`;
+
+	// PROJECT AREA 
+
+								// **** tip calculator
+
+	text += '<h4> Tip Calculator </h4><select onChange="dropdownRedirect(this.value)"><option> Choose project </option>' + 
+			'<option value="tip/freitty.html">' + emhProj[0] + '</option>';
+	
+
+	text += '</select>';  
+
+								// **** celeb table
+
+	text += '<h4> Hostos Bio Page </h4><select onChange="dropdownRedirect(this.value)"><option> Choose project </option>';
+
+	  for (i = 0; i < siteName.length; i++) {
+	  text += '<option value="celeb/' + siteName[i] + '.html">' + emhProj[i] + '</option>';
+	}
+
+	text += '</select>';  
+
+	// display it	
+	document.getElementById('contentArea').innerHTML = text;
+	 
+	  
+	}
 
 mainPage();
 

@@ -13,16 +13,26 @@ select {
   font: 1em Courier;
 }
 
- img {height: auto; max-width: 20%; border: .2em solid black;}
- a {color: white;}
- a:hover {color: yellow;}
+img {
+	 height: auto; 
+	 max-width: 40%; 
+	 border: .2em solid black;
+}
 
+a {color: white; text-decoration: none;}
+a:hover {color: #050a3d; font-weight: bold;}
+span:hover {background-color: white; color: #050a3d; }
 
+.headerLink {padding: .5em; margin: .5em; border: .1em solid white;}
 
 	@media screen and (max-width: 700px) {
 
 
 	img {height: auto; max-width: 80%;}
+	/* body {background-color: red;} */
 
 	}
-	
+
+.stdPage {max-width: 50%;}	
+.stdPage p {text-align: left;}
+.stdPage .box2 {border: .1em solid white; border-radius: 12px; padding: 1em; margin: 1em;}
