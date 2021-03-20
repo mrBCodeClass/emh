@@ -12,8 +12,8 @@
 			
 			if (x == 1) {
 				 
-				text = `<p> Esta clase le ense&ntilde;a a los estudiantes los fundamentos de la programaci&oacute;n de computadoras usando lenguajes de  web, como HTML, CSS y JS. Los estudiantes aprenden a implementar y profundizar sus conocimientos matem&aacute;ticos a trav&eacute;s de t&eacute;cnicas de programaci&oacute;n y proyectos web prácticos.</p>
-						<p> La programaci&oacute;n es ya parte esencial del porvenir y por ende un habilidad que a todo estudiante le beneficia dominar en esta era digital. Esta clase es uno de los programas que ofrece EMH Charter para ayudar a los estudiantes a poner en pr&aacute;ctica sus conocimientos matem&aacute;ticos y prepararlos para el mercado laboral tan influenciado por la tecnología. </p>
+				text = `<p> Esta clase le ense&ntilde;a a los estudiantes los fundamentos de la programaci&oacute;n de computadoras usando lenguajes de  web, como HTML, CSS y JS. Los estudiantes aprenden a implementar y profundizar sus conocimientos matem&aacute;ticos a trav&eacute;s de t&eacute;cnicas de programaci&oacute;n y proyectos web pr&aacute;cticos.</p>
+						<p> La programaci&oacute;n es ya parte esencial del porvenir y por ende un habilidad que a todo estudiante le beneficia dominar en esta era digital. Esta clase es uno de los programas que ofrece EMH Charter para ayudar a los estudiantes a poner en pr&aacute;ctica sus conocimientos matem&aacute;ticos y prepararlos para el mercado laboral tan influenciado por la tecnolog&iacute;a. </p>
 						`;
 
 			} else if (x == 2) {
