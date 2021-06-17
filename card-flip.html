@@ -68,15 +68,17 @@ function flip(x) {
   // Chose 1st card
   if (x == 1) {
     
-    // got it right, back to spade
-		if (x == key) {//
+    // got it right, flip to spade
+		if (x == key) {
 		 
 			c1.src = card[2];
-       reply = 'YOU GOT IT! &#127773'; 
+			
+     reply = 'YOU GOT IT! &#127773'; 
      bg = 'yellow'; 
       color = 'black';
       score++
-      // back to joker
+     
+    // flip to joker
     } else if (c1.src == card[0]) {
 
  			c1.src = card[1];
