@@ -1,156 +1,156 @@
-<html>
-	<head>
-		<link rel="stylesheet" href="css/main.css">
-		<title> 
-			The simplest HTML example 
-		</title>
-	</head>
-
-	<body>
-
-		<p> <span onclick="levelUp(2)"> 2nd Set </span>  <span onclick="levelUp(3)"> 3rd Set </span> </p>
-
-		<h3> Find the Ace of Spades By Mr. B </h3>
-		<img id="card1" onclick="flip(1)" src="img/back-of-card.png">
-
-		<img id="card2" onclick="flip(2)" src="img/back-of-card.png">
-
-		<img id="card3" onclick="flip(3)" src="img/back-of-card.png">
-
-		<div id="response"> </div>
-
-	</body>
-
-<script>
-
- 
-let reply, bg, color, key = 1;
-let level = 1;
-let score = '';
+	
+	let reply, bg, color, key = 1;
+	let level = 1;
+	let score = '';
 
 
 
-let c1 = document.getElementById('card1');
-let c2 = document.getElementById('card2');
-let c3 = document.getElementById('card3');
+	let c1 = document.getElementById('card1');
+	let c2 = document.getElementById('card2');
+	let c3 = document.getElementById('card3');
 
-// 1 - back, 2 - joker, 3 - spade
-let card = ['img/back-of-card.png','img/the-joker-card.jpg', 'img/ace_of_spades.png'];
+	// 1 - back, 2 - joker, 3 - spade
+	let card = ['img/back-of-card.png','img/the-joker-card.jpg', 'img/ace_of_spades.png'];
 
-function levelUp(x) {
-     // Reset the cards
-  			c1.src = card[0];
-  			c2.src = card[0];
-  			c3.src = card[0];
-  // Reset response
-  document.getElementById('response').innerHTML = '';
-  // Reset bg
-   document.body.style.backgroundColor = 'black'; 
-  
-if (x == 1) {
-  
-  key = 1;
+	function levelUp(level) {
+		
+		// Reset the cards
+		c1.src = card[0];
+		c2.src = card[0];
+		c3.src = card[0];
+	  
+		// Reset response
+		document.getElementById('response').innerHTML = '';
+		// Reset bg
+		document.body.style.backgroundColor = 'black'; 
+	
+		// Set key according to level
+		
+		if (level == 1) {
+		  
+			key = 1;
 
-} else if (x == 2) {
-  
-  key = 3;
-  
-} else if (x == 3) {
-  
-  key = 1;
+		} else if (level == 2) {
+		  
+			key = 3;
+		  
+		} else if (level == 3) {
+		  
+			key = 1;
 
-}
+		}
 
-}
+	}
 
-function flip(x) {
-  
-  // Chose 1st card
-  if (x == 1) {
-    
-    // got it right, flip to spade
-		if (x == key) {
+	function flip(x) {
+	  
+	  // Chose 1st card
+		if (x == 1) {
+		
+			// got it right, flip to spade
+			if (x == key) {
+			 
+				c1.src = card[2];
+				
+				reply = 'YOU GOT IT! &#127773'; 
+				bg = 'yellow'; 
+				color = 'black';
+				score++
 		 
-			c1.src = card[2];
+			// got it wrong, flip from cardback to joker or vice versa
+			} else {
+
+				// cardback to joker
+				if (c1.src == card[0]) {
+					
+					c1.src = card[1];
+								
+				// joker to cardback
+				} else if (c1.src == card[1]) {
+				  
+					c1.src = card[0];
 			
-     reply = 'YOU GOT IT! &#127773'; 
-     bg = 'yellow'; 
-      color = 'black';
-      score++
-     
-    // flip to joker
-    } else if (c1.src == card[0]) {
+				}
+			
+				reply = 'OOPS, TRY AGAIN 😑';
+				bg = 'red';
+				score--
 
- 			c1.src = card[1];
-     reply = 'OOPS, TRY AGAIN 😑';
-      bg = 'red';
-     score--
-      // joker to back
-		} else if (c1.src == card[1]) {
-		  
-			c1.src = card[0];
-	
-    }
-    
-  // Chose 2nd card    
-  } else if (x == 2) {
-    
-		if (x == key) {
+			}
+			
+		// Chose 2nd card    
+		} else if (x == 2) {
+		
+			// got it right, flip to spade
+			if (x == key) {
+			 
+				c2.src = card[2];
+				
+				reply = 'YOU GOT IT! &#127773'; 
+				bg = 'yellow'; 
+				color = 'black';
+				score++
 		 
-			c2.src = card[2];
-       reply = 'YOU GOT IT!'; 
-bg = 'yellow';
-      score++
-      
-    } else if (c2.src == card[0]) {
+			// got it wrong, flip from cardback to joker or vice versa
+			} else {
 
- 			c2.src = card[1];
-     reply = 'OOPS, TRY AGAIN! 😑';
-            bg = 'red';
-      score--
-      
-		} else if (c2.src == card[1]) {
-		  
-			c2.src = card[0];
-	
-    }
-    
-    // Chose 3rd card
-  } else if (x == 3) {
-    
-		if (x == key) {
+				// cardback to joker
+				if (c2.src == card[0]) {
+					
+					c2.src = card[1];
+								
+				// joker to cardback
+				} else if (c1.src == card[1]) {
+				  
+					c2.src = card[0];
+			
+				}
+			
+				reply = 'OOPS, TRY AGAIN 😑';
+				bg = 'red';
+				score--
+			
+			}
+		
+		// Chose 3rd card
+	  } else if (x == 3) {
+		
+			// got it right, flip to spade
+			if (x == key) {
+			 
+				c3.src = card[2];
+				
+				reply = 'YOU GOT IT! &#127773'; 
+				bg = 'yellow'; 
+				color = 'black';
+				score++
 		 
-			c3.src = card[2];
-       reply = 'YOU GOT IT!'; 
-      bg = 'yellow';
-      score++
-      
-    } else if (c3.src == card[0]) { 
+			// got it wrong, flip from cardback to joker or vice versa
+			} else {
 
- 			c3.src = card[1];
-     reply = 'OOPS, TRY AGAIN! 😑';
-      bg = 'red';
-      score--
-      
-		} else if (c3.src == card[1]) {
-		  
-			c3.src = card[0];
-	    
-		} // final else if  	
+				// cardback to joker
+				if (c3.src == card[0]) {
+					
+					c3.src = card[1];
+								
+				// joker to cardback
+				} else if (c1.src == card[1]) {
+				  
+					c3.src = card[0];
+			
+				}
+			
+				reply = 'OOPS, TRY AGAIN 😑';
+				bg = 'red';
+				score--
+				
+			}	
 
-  }// end of if x == 3
-  
-  
-  document.getElementById('response').innerHTML = reply + ' Score: ' + score; //
- document.body.style.backgroundColor = bg; 
-   document.body.style.color = color; 
+	  } // end of if x == 3
+	  
+	  
+		document.getElementById('response').innerHTML = reply + ' Score: ' + score; //
+		document.body.style.backgroundColor = bg; 
+		document.body.style.color = color; 
+
 	} // end of flip
-
-
-	
-</script>
-</html>
-
-
-
-
