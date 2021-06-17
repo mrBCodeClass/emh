@@ -20,6 +20,133 @@
 		<div id="response"> </div>
 
 	</body>
+
+<script>
+
+ 
+let reply, bg, color, key = 1;
+let level = 1;
+let score = '';
+
+
+
+let c1 = document.getElementById('card1');
+let c2 = document.getElementById('card2');
+let c3 = document.getElementById('card3');
+
+// 1 - back, 2 - joker, 3 - spade
+let card = ['http://www.jimknapp.com/Cards/Non-Bicycle_files/image001.jpg', 'https://i.pinimg.com/originals/90/35/81/903581fbfe04af0cb4fdabcff8a3cc07.png','https://w7.pngwing.com/pngs/929/679/png-transparent-war-ace-of-spades-playing-card-ace-of-spades-game-text-triangle.png'];
+
+function levelUp(x) {
+     // Reset the cards
+  			c1.src = card[0];
+  			c2.src = card[0];
+  			c3.src = card[0];
+  // Reset response
+  document.getElementById('response').innerHTML = '';
+  // Reset bg
+   document.body.style.backgroundColor = 'black'; 
+  
+if (x == 1) {
+  
+  key = 1;
+
+} else if (x == 2) {
+  
+  key = 3;
+  
+} else if (x == 3) {
+  
+  key = 1;
+
+}
+
+}
+
+function flip(x) {
+  
+  // Chose 1st card
+  if (x == 1) {
+    
+    // got it right, back to spade
+		if (x == key) {//
+		 
+			c1.src = card[2];
+       reply = 'YOU GOT IT! &#127773'; 
+     bg = 'yellow'; 
+      color = 'black';
+      score++
+      // back to joker
+    } else if (c1.src == card[0]) {
+
+ 			c1.src = card[1];
+     reply = 'OOPS, TRY AGAIN 😑';
+      bg = 'red';
+     score--
+      // joker to back
+		} else if (c1.src == card[1]) {
+		  
+			c1.src = card[0];
+	
+    }
+    
+  // Chose 2nd card    
+  } else if (x == 2) {
+    
+		if (x == key) {
+		 
+			c2.src = card[2];
+       reply = 'YOU GOT IT!'; 
+bg = 'yellow';
+      score++
+      
+    } else if (c2.src == card[0]) {
+
+ 			c2.src = card[1];
+     reply = 'OOPS, TRY AGAIN! 😑';
+            bg = 'red';
+      score--
+      
+		} else if (c2.src == card[1]) {
+		  
+			c2.src = card[0];
+	
+    }
+    
+    // Chose 3rd card
+  } else if (x == 3) {
+    
+		if (x == key) {
+		 
+			c3.src = card[2];
+       reply = 'YOU GOT IT!'; 
+      bg = 'yellow';
+      score++
+      
+    } else if (c3.src == card[0]) { 
+
+ 			c3.src = card[1];
+     reply = 'OOPS, TRY AGAIN! 😑';
+      bg = 'red';
+      score--
+      
+		} else if (c3.src == card[1]) {
+		  
+			c3.src = card[0];
+	    
+		} // final else if  	
+
+  }// end of if x == 3
+  
+  
+  document.getElementById('response').innerHTML = reply + ' Score: ' + score; //
+ document.body.style.backgroundColor = bg; 
+   document.body.style.color = color; 
+	} // end of flip
+
+
+	
+</script>
 </html>
 
 
